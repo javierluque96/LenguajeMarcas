@@ -1,0 +1,50 @@
+/* Archivo de estilo de la página de Halloween */
+body {
+  background-color: black;
+}
+#wrapper {
+  position: relative; /* Para poder mover el h1 necesitamos el wrapper en posición relativa */
+  background-image: url("../imagenes/FondoHalloween2.jpg");
+  width: 1400px;
+  height: 845px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+h1 {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  font-size: 3em;
+  font-family: 'Creepster', cursive;
+}
+p.p1 {
+  position: relative;
+  top: 110px;
+  left: 50px;
+  font-size: 2em;
+  font-family: 'Creepster', cursive;
+  
+}
+p.p2 {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  font-size: 2em;
+  font-family: 'Creepster', cursive;
+}
+#ventana {
+  position: absolute;
+  top: 170px;
+  left: 1143px;
+  /* border: 3px solid white;  */
+  width: 40px;
+  height: 40px;
+  cursor: not-allowed;
+}
+#truco {
+  position: absolute;
+  top: 400px;
+  left: 1060px;
+  visibility: hidden;
+  cursor: not-allowed;
+}

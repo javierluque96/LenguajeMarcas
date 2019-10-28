@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scary Halloween</title>
+  <!-- This document is NOT RESPONSIVE, it's made for MONITOR PC -->
+  
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imagenes/favicon.png"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos/EstiloHalloween.css">
+  <!-- JS -->
+  <script src="javascript/JsHalloween.js"></script>
+</head>
+
+<body>
+  <audio id="gifSound" autoplay>
+    <source src="sonidos/death.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="wrapper">
+    <h1>Happy Halloween</h1>
+    <p class="p1">Welcome to the horrorland MUAHAHAHA</p>
+    <p class="p2">Don't touch the top stained glass!!!!</p>
+  </div>
+
+  <div id="ventana" onclick="mostrar('truco'); sonar('gifSound')"> <!-- Para definir un área activable --></div>
+  
+  <img id="truco" src="imagenes/trucotrato.gif" width="200" onclick="ocultar('truco'); pausa('gifSound')">
+</body>
+</html>
