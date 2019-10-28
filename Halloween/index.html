@@ -17,11 +17,13 @@
   <script src="javascript/JsHalloween.js"></script>
 </head>
 
-<body>
+<body onload="sonar('background')">
   <audio id="gifSound" autoplay>
     <source src="sonidos/death.mp3" type="audio/mpeg">
   </audio>
-
+  <audio id="background" >
+    <source src="sonidos/background.mp3" type="audio/mpeg">
+  </audio>
   <div id="wrapper">
     <h1>Happy Halloween</h1>
     <p class="p1">Welcome to the horrorland MUAHAHAHA</p>
@@ -30,6 +32,6 @@
 
   <div id="ventana" onclick="mostrar('truco'); sonar('gifSound')"> <!-- Para definir un área activable --></div>
   
-  <img id="truco" src="imagenes/trucotrato.gif" width="200" onclick="ocultar('truco'); pausa('gifSound')">
+  <img id="truco" src="imagenes/trucotrato.gif" width="200" onclick="ocultar('truco'); parar('gifSound')">
 </body>
 </html>
