@@ -10,12 +10,16 @@ body {
   background-repeat: no-repeat;
   margin: auto;
 }
+@font-face {
+  font-family: fuenteTitulo;
+  src: url(../fuentes/MR.MONSTAR.otf);
+ }
 h1 {
   position: absolute;
   top: 5px;
   left: 50px;
   font-size: 3em;
-  font-family: 'Creepster', cursive;
+  font-family: fuenteTitulo;
 }
 p.p1 {
   position: relative;
@@ -23,11 +27,17 @@ p.p1 {
   left: 50px;
   font-size: 2em;
   font-family: 'Creepster', cursive;
-  
 }
 p.p2 {
   position: absolute;
   top: 130px;
+  left: 50px;
+  font-size: 2em;
+  font-family: 'Creepster', cursive;
+}
+p.p3 {
+  position: absolute;
+  top: 190px;
   left: 50px;
   font-size: 2em;
   font-family: 'Creepster', cursive;
