@@ -20,7 +20,7 @@ body {
 }
 h1 {
   position: absolute;
-  left: 100px;
+  left: 125px;
   font-size: 3em;
   font-family: fuenteTitulo;
 }
@@ -28,19 +28,19 @@ p.p1 {
   position: relative;
   top: 110px;
   left: 50px;
-  font-size: 2em;
-  font-family: 'Creepster', cursive;
+  font-size: 27px;
+  font-family: fuenteZombie;
 }
 p.p2 {
   position: absolute;
   top: 130px;
   left: 50px;
-  font-size: 2em;
-  font-family: 'Creepster', cursive;
+  font-size: 27px;
+  font-family: fuenteZombie;
 }
 p.p3 {
   position: absolute;
-  top: 190px;
+  top: 180px;
   left: 50px;
   font-size: 2em;
   font-family: 'Creepster', cursive;
@@ -48,9 +48,9 @@ p.p3 {
 p.zombie {
   position: absolute;
   top: 240px;
-  left: 50px;
+  left: 80px;
   font-size: 2em;
-  font-family: fuenteZombie;
+  font-family: 'Creepster', cursive;
 }
 #ventana {
   position: absolute;
@@ -61,10 +61,26 @@ p.zombie {
   height: 40px;
   cursor: not-allowed;
 }
+#ventana2 {
+  position: absolute;
+  top: 355px;
+  left: 510px;
+  /* border: 3px solid white; */
+  width: 65px;
+  height: 65px;
+  cursor: not-allowed;
+}
 #truco {
   position: absolute;
   top: 400px;
   left: 1060px;
+  visibility: hidden;
+  cursor: not-allowed;
+}
+#sabrina {
+  position: absolute;
+  top: 350px;
+  left: 460px;
   visibility: hidden;
   cursor: not-allowed;
 }
