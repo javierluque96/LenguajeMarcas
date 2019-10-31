@@ -1,6 +1,7 @@
 /* Archivo de estilo de la página de Halloween */
 body {
   background-color: black;
+  overflow: hidden;
 }
 #wrapper {
   position: relative; /* Para poder mover el h1 necesitamos el wrapper en posición relativa */
