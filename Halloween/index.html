@@ -33,12 +33,13 @@
     <p class="p2"><strong>Don't forget to come at midnight with your best disguise!</strong></p>
     <p class="p3">And if you dare touch the top window... </p> 
     <p class="zombie">DO NOT DISTURB MY CAT!!</p>
+    <div id="ventana" onclick="mostrar('truco'); sonar('evilaugh')"> <!-- área activable --></div>
+    <img id="truco" src="imagenes/trucotrato.gif" width="200" onclick="ocultar('truco'); parar('evilaugh')">
+
+    <div id="ventana2" onclick="mostrar('sabrina'); sonar('killyou')"> <!-- área activable --></div>
+    <img id="sabrina" src="imagenes/sabrinaCat.gif" width="200" onclick="ocultar('sabrina'); parar('killyou')"> 
   </div>
 
-  <div id="ventana" onclick="mostrar('truco'); sonar('evilaugh')"> <!-- área activable --></div>
-  <img id="truco" src="imagenes/trucotrato.gif" width="200" onclick="ocultar('truco'); parar('evilaugh')">
-
-  <div id="ventana2" onclick="mostrar('sabrina'); sonar('killyou')"> <!-- área activable --></div>
-  <img id="sabrina" src="imagenes/sabrinaCat.gif" width="200" onclick="ocultar('sabrina'); parar('killyou')">
+  
 </body>
 </html>
