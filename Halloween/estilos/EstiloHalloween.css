@@ -74,14 +74,14 @@ p.zombie {
 #truco {
   position: absolute;
   top: 400px;
-  left: 1060px;
+  left: 1000px;
   visibility: hidden;
   cursor: not-allowed;
 }
 #sabrina {
   position: absolute;
-  top: 350px;
-  left: 460px;
+  top: 325px;
+  left: 400px;
   visibility: hidden;
   cursor: not-allowed;
 }
