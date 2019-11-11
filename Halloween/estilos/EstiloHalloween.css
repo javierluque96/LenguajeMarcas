@@ -55,8 +55,8 @@ p.zombie {
 }
 #ventana {
   position: absolute;
-  top: 170px;
-  left: 1143px;
+  top: 138px;
+  left: 1085px;
   /* border: 3px solid white;  */
   width: 40px;
   height: 40px;
@@ -64,8 +64,8 @@ p.zombie {
 }
 #ventana2 {
   position: absolute;
-  top: 355px;
-  left: 510px;
+  top: 325px;
+  left: 450px;
   /* border: 3px solid white; */
   width: 65px;
   height: 65px;
