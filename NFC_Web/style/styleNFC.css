@@ -3,7 +3,8 @@ body {
   font-size: 18px;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -21,7 +22,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
 }
 
 .hero-text h1 {
@@ -54,7 +54,7 @@ header {
 }
 
 #BlueHeader {
-  color: #50F1FF;
+  color: #50f1ff;
 }
 
 /* MAIN -----------------------------------------------------------*/
@@ -139,6 +139,11 @@ iframe {
   word-wrap: break-word; /* Hace responsive los links de la webgrafía */
 }
 
+.box-imagenes img {
+  width: 20%;
+  margin-left: 4%;
+}
+
 /* FOOTER ---------------------------------------------------------*/
 footer {
   padding: 20px; /* Some padding */
@@ -149,7 +154,8 @@ footer {
 
 /* RESPONSIVE ---------------------------------------------------- */
 @media screen and (max-width: 1024px) {
-  .column.left, .column.right {
+  .column.left,
+  .column.right {
     width: 100%;
   }
   .wrapper {
@@ -165,6 +171,12 @@ footer {
     width: 60%;
     height: auto;
     padding: 0px 20px 20px 20px;
+  }
+
+  .box-imagenes img {
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 20px;
   }
 }
 
@@ -185,7 +197,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .column.left, .column.right {
+  .column.left,
+  .column.right {
     width: 100%;
   }
 
@@ -215,6 +228,12 @@ footer {
   main ul {
     padding-left: 20px;
   }
+  
+  .box-imagenes img {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+  }
 }
 
 /* Quita problema con los h1 */
@@ -222,11 +241,11 @@ footer {
   body {
     font-size: 16px;
   }
-  
+
   main {
     padding: 15px;
   }
-  
+
   main h1 {
     font-size: 30px;
   }
@@ -234,7 +253,7 @@ footer {
   .hero-text h1 {
     font-size: 1.8em;
   }
-  
+
   .column.right img {
     width: 100%;
   }
