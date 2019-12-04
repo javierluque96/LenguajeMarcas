@@ -15,6 +15,17 @@ html {
   margin: auto;
 }
 
+/* Cambia color de selección */
+::-moz-selection { /* Para Firefox */
+  color: white;
+  background: #0272A0;
+}
+
+::selection {
+  color: white;
+  background: #0272A0;
+}
+
 /* HEADER -------------------------------------------------------*/
 header {
   background-image: url("../img/HeaderMovil.png");
@@ -120,7 +131,7 @@ main p {
   clear: both;
 }
 
-/* Video */
+/* Video  */
 iframe {
   display: block;
   margin: auto;
