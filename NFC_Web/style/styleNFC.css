@@ -1,0 +1,253 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADER -------------------------------------------------------*/
+header {
+  background-image: url("../img/HeaderMovil.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.hero-text h1 {
+  font-size: 4em;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-text .button:hover {
+  background-color: #555;
+  color: white;
+}
+
+#BlueHeader {
+  color: #50F1FF;
+}
+
+/* MAIN -----------------------------------------------------------*/
+main {
+  padding: 0px 50px 50px 50px;
+  background-color: #f1f1f1;
+}
+
+main h1 {
+  font-size: 35px;
+  margin: 0px 0px 20px 0px;
+  color: rgb(3, 82, 110);
+}
+
+main hr {
+  margin-top: 20px;
+}
+
+main ul {
+  margin: 20px 20px 20px 10px;
+  text-align: justify;
+}
+
+main p {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Left  column */
+.column.left {
+  width: 60%;
+  /* background-color: blueviolet; */
+}
+
+/* Right column */
+.column.right {
+  width: 40%;
+  /* background: #0272a0; */
+}
+
+.column.right img {
+  width: 100%;
+  height: auto;
+  padding: 0px 20px 20px 20px;
+}
+
+.titulo-seccion h1 {
+  text-align: center;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+
+/* Clear floats after the columns */
+.two-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Video */
+iframe {
+  display: block;
+  margin: auto;
+  width: 560px;
+  height: 315px;
+}
+
+#sec5 img {
+  margin: auto;
+  display: block;
+  width: 50vw;
+  height: auto;
+  padding: 10px 0px;
+}
+
+#sec7 a {
+  word-wrap: break-word; /* Hace responsive los links de la webgrafía */
+}
+
+/* FOOTER ---------------------------------------------------------*/
+footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: rgb(82, 82, 82); /* Grey background */
+  color: white;
+}
+
+/* RESPONSIVE ---------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  main {
+    padding: 30px;
+  }
+
+  .column.right img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    padding: 0px 20px 20px 20px;
+  }
+}
+
+/* Para el título del header */
+@media screen and (max-width: 700px) {
+  .hero-text h1 {
+    font-size: 3em;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .column.right img {
+    width: 70%;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 168.75px;
+  }
+
+  .column.right img {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  #sec5 img {
+    width: 100%;
+  }
+
+  main ul {
+    padding-left: 20px;
+  }
+}
+
+/* Quita problema con los h1 */
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 15px;
+  }
+  
+  main h1 {
+    font-size: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+  
+  .column.right img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero-text h1 {
+    font-size: 1.5em;
+  }
+  main h1 {
+    font-size: 1.5em;
+  }
+  body {
+    font-size: 5vw;
+  }
+}
