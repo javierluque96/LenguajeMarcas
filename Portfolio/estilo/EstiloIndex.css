@@ -1,0 +1,114 @@
+/* Estilo del Portfolio */
+body {
+  background-color: black;
+  font-family: "Jomolhari", sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+#wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+header {
+  position: relative;
+  background-image: url("../imagenes/HeaderCode.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  padding: 30px;
+  /* width: 500px; */
+  width: 40%;
+  border: 3px solid black;
+}
+
+/* MAIN */
+main h2 {
+  font-size: 3.5em;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Jomolhari", serif;
+}
+
+.polaroid {
+  float: left;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5%;
+  cursor: pointer;
+  /* border: 4px solid white; */
+}
+
+.polaroid:hover {
+  opacity: 0.5;
+}
+
+.polaroid img {
+  width: 94%;
+  margin: 3%;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Siempre que use float para apilar columnas, debo acabar poniendo un div e indicando que a partir de ahi se acaba el apilamiento */
+.fin-float {
+  clear: both;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(233, 233, 233);
+  padding: 20px;
+  font-weight: bold; /* Pone en negrita */
+  text-align: center;
+}
+
+footer .fa {
+  font-size: 3em;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+  }
+  header {
+    background-image: url("../imagenes/HeaderVertical.jpg");
+    height: 100vh; /* Para que la imagen de fondo ocupe todo el alto del móvil*/
+  }
+
+  main h2 {
+    font-size: 2em;
+  }
+
+  .polaroid {
+    width: 90%;
+  }
+}
+
+/* 
+Otra forma de hacer el header es metiendo en el header dos imagenes como banner. Y cambiamos la visibilidad de ambas al llegar a determinado ancho para que se muestre una u otra. 
+Hay que ponerlos para que se vea normal y en el media al reves para que cambie las fotos.
+
+.para-pc {display: block;}
+.para-movil {display: none;}
+*/

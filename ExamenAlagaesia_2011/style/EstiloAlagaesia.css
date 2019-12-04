@@ -1,0 +1,141 @@
+body {
+  background-image: url("../imagenes/tile-sky2.jpg");
+  font-family: Youthome;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url("../fuente/Youthome.ttf");
+  font-family: "Youthome";
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+/* HEADER ----------------------------------------------------- */
+header {
+  background-image: url("../imagenes/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  /* background-position: right ; Para cortar la imagen por la izquierda y no por la derecha, center para ambos lados*/
+}
+
+.titulo-header {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  font-size: 1.5em;
+}
+
+/* NAV BAR ---------------------------------------------------- */
+.topnav {
+  background-color: rgba(51, 51, 51, 0.9);
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  /* border-radius: 5px; */
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #854a76;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* MAIN -------------------------------------------------------- */
+
+main {
+  background-image: url("../imagenes/tile.jpg");
+  padding: 5px 30px;
+}
+
+main h1 {
+  color: #6993a8;
+}
+main p {
+  text-indent: 2em;
+}
+
+.box-imagenes img {
+  width: 20%;
+  margin-left: 4%;
+}
+/* FOOTER ------------------------------------------------------ */
+
+footer {
+  background-color: #854a76;
+  padding: 20px;
+}
+
+/* RESPONSIVE ---------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  .box-imagenes img {
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .box-imagenes img {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+/* RESPONSIVE NAV BAR-------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: none; /* Oculta las barras */
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: sticky;
+    top: 0;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
