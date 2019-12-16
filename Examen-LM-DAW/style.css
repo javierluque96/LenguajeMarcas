@@ -1,0 +1,200 @@
+/* Estilo Index Examen LM */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: examen;
+}
+
+body {
+  background-color: #ffd7de;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #dbd6d6;
+}
+
+.wrapper .icono {
+  font-size:40px;
+  cursor:pointer;
+  top: 0;
+  margin-left: 8px;
+  color: white;
+  position: sticky;
+  z-index: 1;
+  height: 0px;
+}
+
+/* Importa una fuente */
+@font-face {
+  src: url("./fuentes/Electrolize.ttf");
+  font-family: examen;
+}
+
+/* Estilo del header */
+header {
+  position: relative;
+  background-image: url("./imagenes/header.jpg");
+  background-position: right;
+  height: 400px;
+  background-size: cover;
+}
+
+header h1 {
+  position: absolute;
+  color: white;
+  top: 38%;
+  left: 5%;
+  text-shadow: 1px 1px black;
+
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Estilo barra de Navegación */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #009cbe;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffd7de;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Estilo del main */
+main {
+  padding: 40px;
+}
+
+main ul, main p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+main h1 {
+  color: #f68196;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+main p {
+  text-indent: 30px;
+  margin: 15px 0px 15px 0px;
+}
+
+main img {
+  display: inline-block;
+  width: 20%;
+  margin: 2.35%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.746);
+}
+
+main img:hover {
+  opacity: 0.5;
+}
+
+/* Estilo del Footer */
+footer {
+  background-color: #009cbe;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Estilo Responsive */
+@media screen and (max-width: 1480px) {
+  main img {
+    width: 44%;
+    margin: 2.5%
+  }
+}
+
+@media screen and (max-width: 600px){
+  main img {
+    width: 95%;
+  } 
+
+  .wrapper {
+    width: 100%;
+  }
+
+  header {
+    background-image: url("./imagenes/header2.png");
+  }
+
+  header h1 {
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main {
+    padding: 10px;
+  }
+}
+
+/* Para pantallas muy estrechas */
+@media screen and (max-width: 250px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main h1 {
+    font-size: 1.5em;
+  }
+
+  #mySidenav.sidenav {
+    width: 100%;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    font-size: 5vw;
+  }
+
+  .sidenav .closebtn {
+    right: 25%;
+  }
+}
