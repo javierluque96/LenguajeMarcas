@@ -27,6 +27,10 @@ html, body {
   background-color: rgb(226, 226, 226);
 }
 
+.color-white {
+  color: white;
+}
+
 @media only screen and (max-width: 500px) {
   .display-3 {
     font-size: 2.8rem;
