@@ -27,8 +27,16 @@ html, body {
   background-color: rgb(226, 226, 226);
 }
 
+.bg-dark {
+  background-color: #202124 !important;
+}
+
 .color-white {
   color: white;
+}
+
+.p-6 {
+  padding: 4rem 1rem;
 }
 
 @media only screen and (max-width: 500px) {
