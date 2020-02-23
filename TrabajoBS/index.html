@@ -19,17 +19,16 @@
   </header>
 
   <!-- MAIN  -->
-  <main data-spy="scroll" data-target="#navegacion" data-offset="0" class="px-0">
-
+  <main>
     <!-- BARRA DE NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark bg-faded ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="fa fa-bars color-white"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto w-auto justify-content-center">
           <li class="nav-item">
-            <a class="navbar-brand" href="#sec1">¿Por qué?<span class="sr-only">(current)</span></a>
+            <a class="navbar-brand" href="#sec1">¿Por qué ecológico?<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="navbar-brand" href="#sec2">Propiedades<span class="sr-only">(current)</span></a>
@@ -44,10 +43,10 @@
             <a class="navbar-brand" href="#sec5">¿Dónde puedes encontrarnos?<span class="sr-only">(current)</span></a>
           </li>
         </ul>
-      </div>
+      </div> <!-- collapse -->
     </nav>
 
-    <!-- SECCIÓN 1 -->
+    <!-- SECCIÓN 1 ¿Por qué comprar productos ecológicos? -->
     <section id="sec1" class="container text-justify bg-white p-6">
       <h1 class="text-center display-3">¿Por qué comprar productos ecológicos?</h1>
 
@@ -137,7 +136,7 @@
 
     </section>
 
-    <!-- SECCIÓN 2 -->
+    <!-- SECCIÓN 2 Propiedades y beneficios del aguacate -->
     <section id="sec2" class="bg-dark color-white rounded-0">
       <div class="container p-6">
         <h1 class="text-center mb-5 display-3">Propiedades y beneficios del aguacate</h1>
@@ -147,10 +146,11 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 3 -->
+    <!-- SECCIÓN 3 variedades de aguacates -->
     <section id="sec3" class="container p-6 bg-white">
       <h1 class="text-center display-4 pb-4">Variedades de aguacates</h1>
       <!-- variedades de aguacates -->
+      <div class="container text-center mb-3"><img class="w-variedades" src="imagenes/variedades.jpg" alt="variedades de aguacates"></div>
       <ul class="list-group">
         <li class="list-group-item">
           <h3 class="text-center">Hass</h3>
@@ -179,7 +179,7 @@
       </ul>
     </section>
 
-    <!-- SECCIÓN 4 -->
+    <!-- SECCIÓN 4 ¿Quiénes somos? -->
     <section id="sec4" class="bg-dark color-white rounded-0">
       <div class="container p-6">
         <h1 class="text-center display-4">¿Quiénes somos?</h1>
@@ -207,7 +207,7 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 5 -->
+    <!-- SECCIÓN 5 ¿Dónde puedes encontrarnos? -->
     <section id="sec5" class="container p-6 bg-white mb-0">
       <h1 class="text-center display-4 pb-4">¿Dónde puedes encontrarnos?</h1>
       
@@ -221,13 +221,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://i.picsum.photos/id/8/1000/600.jpg" class="d-block w-100" alt="foto">
+              <img src="imagenes/avocado2.png" class="d-block w-100" alt="aguacates">
             </div>
             <div class="carousel-item">
-              <img src="https://i.picsum.photos/id/81/1000/600.jpg" class="d-block w-100" alt="foto">
+              <img src="imagenes/collageAvocado.jpg" class="d-block w-100" alt="collage de aguacates">
             </div>
             <div class="carousel-item">
-              <img src="https://i.picsum.photos/id/816/1000/600.jpg" class="d-block w-100" alt="foto">
+              <img src="imagenes/avocado3.jpg" class="d-block w-100" alt="aguacates">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -247,15 +247,13 @@
           <div class="col-12 col-md-6 mx-auto mb-5">
             <form action="#" method="get" name="f1">
               <div class="form-group">
-                <label for="exampleInputText1">Nombre:</label>
-                <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" required>
+                <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" required placeholder="Nombre">
                 <small id="nameHelp" class="form-text text-muted">Introduce nombre, campo obligatorio</small>
               </div>
 
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Sexo</label>
                 <select class="form-control" id="exampleFormControlSelect1" required>
-                  <option value="0">Elija una opción</option>
+                  <option value="0">Sexo</option>
                   <option value="H">Hombre</option>
                   <option value="M">Mujer</option>
                 </select>
@@ -263,33 +261,30 @@
               </div>
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Dirección email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Dirección email">
                 <small id="emailHelp" class="form-text text-muted">Completa el email, campo obligatorio</small>
               </div>
 
               <div class="form-group">
-                <label for="exampleInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" name="clave1" required>
+                <input type="password" class="form-control" name="clave1" required placeholder="Contraseña">
                 <small id="passwordHelp" class="form-text text-muted">Introduce la contraseña, campo obligatorio</small>
               </div>
 
               <div class="form-group">
-                <label for="exampleInputPassword2">Repetir contraseña</label>
-                <input type="password" class="form-control" name="clave2" required>
+                <input type="password" class="form-control" name="clave2" required placeholder="Repetir contraseña">
                 <small id="password2Help" class="form-text text-muted">Repite la contraseña, campo obligatorio</small>
               </div>
 
-              <div class="form-group form-check">
+              <div class="form-group form-check text-center">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">Acepto las condiciones</label>
+                <label class="form-check-label" for="exampleCheck1">Acepto las condiciones de uso</label>
               </div>
-              <button type="submit" class="btn btn-primary mx-auto d-block"   onClick="comprobarClave()">Enviar</button>
+              <button type="submit" class="btn btn-outline-dark mx-auto d-block"   onClick="comprobarClave()">Enviar</button>
             </form>
           </div>
 
           <!-- Maps -->
-          <div class="col-12 col-md-6 mb-5 center-vertically">
+          <div class="col-12 col-md-6 mb-5">
             <div class="container embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1691.9945013880929!2d-4.579451341818983!3d36.6595879949945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM5JzM0LjUiTiA0wrAzNCc0Mi4xIlc!5e1!3m2!1ses!2ses!4v1581771302725!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>"></iframe>
             </div>
@@ -307,7 +302,7 @@
           <div class="col-12 col-lg-4 mb-3 text-center-responsive">
             <h3 class="color-white text-center">Información de contacto</h3>
             <p>
-              <i class="fa fas fa-mail-bulk mr-2" aria-hidden="true"></i> ecoavoacado@loveavocados.com <br>
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i> ecoavoacado@loveavocados.com <br>
               <i class="fas fa-directions mr-2" aria-hidden="true"></i> Calle Juan Carlos I, sin número.<br> 
               <i class="fas fa-phone mr-2" aria-hidden="true"></i> 654621956
             </p>  
@@ -318,14 +313,14 @@
             <div class="text-center">
               <a href="#" target="_blanck" class="color-white mr-3"><i class="fab fa-facebook font-size-48" aria-hidden="true"></i></a>
               <a href="#" target="_blanck" class="color-white mr-3"><i class="fab fa-twitter font-size-48" aria-hidden="true"></i></a>
-              <a href="#" target="_blanck" class="color-white mr-3"><i class="fab fa-instagram font-size-48" aria-hidden="true"></i></a>
+              <a href="#" target="_blanck" class="color-white"><i class="fab fa-instagram font-size-48" aria-hidden="true"></i></a>
             </div>
           </div>
   
           <div class="col-12 col-lg-4 mb-3 text-center">
             <h3 class="color-white">Página realizada por:</h3>
-            <p>Javier Luque Rodríguez</p>
-            <a href="https://github.com/javierluque96" target="_blanck"><i class="fab fa-github font-size-48" aria-hidden="true"></i></a> 
+            <p class="mb-2">Javier Luque Rodríguez</p>
+            <a href="https://github.com/javierluque96" target="_blanck"><i class="fab fa-github  font-size-48" aria-hidden="true"></i></a> 
           </div>
         </div>
       </div>
@@ -337,7 +332,5 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <!-- popper -->
-  <script src="popper.min.js"></script>
 </body>
 </html>

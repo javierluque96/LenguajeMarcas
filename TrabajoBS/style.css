@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
 }
-/* HEADER */
+
+/* Hero image */
 .bg-image {
   background-image: url("imagenes/avocado.jpg");
   height: 100vh;
@@ -11,12 +12,14 @@ html, body {
   position: relative;
 }
 
+/* Centra verticalmente con flexbox */
 .center-vertically {
   display: flex;
   justify-content: center;
   align-items: center; 
 }
 
+/* Centra verticalmente con posición absoluta */
 .center-absolute {
   position: absolute;
   top: 50%;
@@ -29,7 +32,6 @@ html, body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Para las distintas secciones */
 .bg-gris {
   background-color: rgb(226, 226, 226);
 }
@@ -46,10 +48,21 @@ html, body {
   font-size: 48px;
 }
 
+.w-variedades {
+  width: 50%;
+}
+
+/* Navbar */
+.navbar-brand {
+  margin-right: 4rem;
+  font-size: 1rem;
+}
+
 .navbar-dark:hover .navbar-brand:hover {
   color: #cbdd29;
 }
 
+/* Padding para cada sección */
 .p-6 {
   padding: 4rem 0.75rem;
 }
@@ -72,6 +85,10 @@ html, body {
 @media only screen and (max-width: 992px) {
   .text-center-responsive {
     text-align: center;
+  }
+
+  .w-variedades {
+    width: 100%;
   }
 }
 
