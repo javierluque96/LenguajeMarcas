@@ -10,7 +10,6 @@ body {
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
-
 .nav {
   width: 100%;
   height: 65px;
@@ -27,7 +26,7 @@ body {
   float: left;
   width: auto;
   height: auto;
-  /* margin-top: 5px; */
+  margin-top: 3px;
   padding-left: 3rem;
 }
 
@@ -115,18 +114,13 @@ body {
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:825px) {
   .hamburguesa {
     display: block;
   }
   .nav div.logo {
     margin-left: 15px;
+    padding-left: 0;
   }
   .nav div.main_list {
     width: 100%;
@@ -150,12 +144,11 @@ body {
   }
   .nav div.main_list ul li {
     width: 100%;
-    text-align: right;
   }
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     padding: 20px;
   }
   .nav div.media_button {
