@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 600) {
+  if ($(document).scrollTop() > 100) {
     $('.nav').addClass('affix');
     console.log("OK");
   } else {
