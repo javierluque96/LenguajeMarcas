@@ -85,14 +85,35 @@
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
+                  Ejercicio 1: Cálculo de Áreas de Triángulos
                 </button>
               </h2>
             </div>
         
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="container">
+            
+                  <form class="col-sm-10 col-sm-8 col-lg-6 mx-auto border border-primary rounded p-4" onsubmit="return areaTriangulo()">
+                    
+                    <div class="form-group">
+                      <label for="base">Base</label>
+                      <input type="text" onfocus="quitaError('base')" class="form-control" id="base" aria-describedby="baseHelp">
+                      <small id="baseHelp" class="form-text text-danger"></small>
+                    </div>
+            
+                    <div class="form-group">
+                      <label for="altura">Altura</label>
+                      <input type="text" onfocus="quitaError('altura')" class="form-control" id="altura" aria-describedby="alturaHelp">
+                      <small id="alturaHelp" class="form-text text-danger"></small>
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                  </form>
+            
+                  <h3 id="resultado" class="text-center my-4"></h3>
+            
+                </div>
               </div>
             </div>
           </div>
@@ -100,7 +121,7 @@
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
+                  Ejercicio 2: 
                 </button>
               </h2>
             </div>
@@ -114,13 +135,28 @@
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
+                  Ejercicio 3: Calculo Letra DNI
                 </button>
               </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="container">
+                  <!-- FORMULARIO DE ENTRADA DE DATOS -->
+                  <form onsubmit="return calculoLetraDni()" class="col-sm-10  col-md-8 col-lg-6 my-3 mx-auto border border-primary rounded p-5">
+                   <h1>Cálculo de letra del DNI</h1>
+                   <!-- MODIFICO Y ADAPTO EL CAMPO DE ENTRADA PARA EL Nº DEL DNI -->
+                   <div class="form-group">
+                     <label for="numeroDni">Número de DNI:</label>
+                     <input type="text" onfocus="quitarError('numeroDni')" class="form-control" id="numeroDni" aria-describedby="numeroDniHelp">
+                     <small id="numeroDniHelp" class="form-text text-danger"></small>
+                   </div>
+                   <input type="submit" value="Calcula" class="btn btn-primary">
+                 </form>
+                  
+                  <!-- VAMOS A MOSTRAR EL RESULTADO EN LA PROPIA PÁGINA DESDE JS-->
+                   <h3 id="resultado3" class="my-4 text-center"></h3>
+                 </div>
               </div>
             </div>
           </div>
@@ -230,7 +266,8 @@
     
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scriptsNav.js"></script>
+    <script src="js/FuncionesEjercicios.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
