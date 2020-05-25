@@ -1,279 +1,321 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon 4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Favicon 5 -->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Hello, world!</title>
+  <!-- Favicon 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logoJS_favicon.jpg" type="image/x-icon">
+  <!-- Favicon 5 -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Hello, world!</title>
 
-    <!-- Mi estilo -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="container-fluid">
-        <div class="logo">
-          <a href="#"><i class='fab fa-js' style='font-size:40px;color:yellow'></i></a>
-        </div>
-        <div id="mainListDiv" class="main_list">
-          <ul class="navlinks">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                JavaScript
-              </a>
-              <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Uno</a>
-                <a class="dropdown-item" href="#">Dos</a>
-                <a class="dropdown-item" href="#">Tres</a>
-                <a class="dropdown-item" href="#">Cuatro</a>
-              </div>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                JQuery
-              </a>
-              <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/logoJS_favicon.jpg" type="image/x-icon">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                JSON
-              </a>
-              <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <span class="hamburguesa">
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
+  <!-- Mi estilo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="#"><i class='fab fa-js' style='font-size:40px;color:yellow'></i></a>
       </div>
-    </nav>
-    
-    <header class="home">
-    </header>
-    <main class="container">
-      
-      <section id="js">
-        <h2 class="mi-h2 my-5">JavaScript</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Ejercicio 1: Cálculo de Áreas de Triángulos
-                </button>
-              </h2>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              JavaScript
+            </a>
+            <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#js1">Uno</a>
+              <a class="dropdown-item" href="#js2">Dos</a>
+              <a class="dropdown-item" href="#js3">Tres</a>
+              <a class="dropdown-item" href="#js4">Cuatro</a>
+              <a class="dropdown-item" href="#js5">Cinco</a>
             </div>
-        
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                <div class="container">
-            
-                  <form class="col-sm-10 col-sm-8 col-lg-6 mx-auto border border-primary rounded p-4" onsubmit="return areaTriangulo()">
-                    
-                    <div class="form-group">
-                      <label for="base">Base</label>
-                      <input type="text" onfocus="quitaError('base')" class="form-control" id="base" aria-describedby="baseHelp">
-                      <small id="baseHelp" class="form-text text-danger"></small>
-                    </div>
-            
-                    <div class="form-group">
-                      <label for="altura">Altura</label>
-                      <input type="text" onfocus="quitaError('altura')" class="form-control" id="altura" aria-describedby="alturaHelp">
-                      <small id="alturaHelp" class="form-text text-danger"></small>
-                    </div>
-            
-                    <button type="submit" class="btn btn-primary">Calcular</button>
-                  </form>
-            
-                  <h3 id="resultado" class="text-center my-4"></h3>
-            
-                </div>
-              </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              JQuery
+            </a>
+            <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#jquery1">Uno</a>
+              <a class="dropdown-item" href="#jquery2">Dos</a>
+              <a class="dropdown-item" href="#jquery3">Tres</a>
+              <a class="dropdown-item" href="#jquery4">Cuatro</a>
+              <a class="dropdown-item" href="#jquery5">Cinco</a>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Ejercicio 2: 
-                </button>
-              </h2>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-left" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              JSON
+            </a>
+            <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#json">Validación</a>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Ejercicio 3: Calculo Letra DNI
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                <div class="container">
-                  <!-- FORMULARIO DE ENTRADA DE DATOS -->
-                  <form onsubmit="return calculoLetraDni()" class="col-sm-10  col-md-8 col-lg-6 my-3 mx-auto border border-primary rounded p-5">
-                   <h1>Cálculo de letra del DNI</h1>
-                   <!-- MODIFICO Y ADAPTO EL CAMPO DE ENTRADA PARA EL Nº DEL DNI -->
-                   <div class="form-group">
-                     <label for="numeroDni">Número de DNI:</label>
-                     <input type="text" onfocus="quitarError('numeroDni')" class="form-control" id="numeroDni" aria-describedby="numeroDniHelp">
-                     <small id="numeroDniHelp" class="form-text text-danger"></small>
-                   </div>
-                   <input type="submit" value="Calcula" class="btn btn-primary">
-                 </form>
-                  
-                  <!-- VAMOS A MOSTRAR EL RESULTADO EN LA PROPIA PÁGINA DESDE JS-->
-                   <h3 id="resultado3" class="my-4 text-center"></h3>
-                 </div>
-              </div>
-            </div>
-          </div>
+          </li>
+        </ul>
+      </div>
+      <span class="hamburguesa">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+
+  <header class="home">
+  </header>
+  <main class="container">
+
+    <section id="js">
+      <h2 class="mi-h2 my-5">JavaScript</h2>
+
+      <!-- JS 1 -->
+      <div class="card">
+        <div class="card-header text-center" id="js1">
+          <h2 class="card-title mh-card">Ejercicio 1: Cálculo de Áreas de Triángulos</h2>
         </div>
-      </section>
+        <div class="col-md-6 mx-auto">
+          <form class="mt-5 border border-primary rounded p-4" onsubmit="return areaTriangulo()">
 
-      <section id="jquery">
-        <h2 class="mi-h2 my-5">JQuery</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
-                </button>
-              </h2>
+            <div class="form-group">
+              <label for="base">Base</label>
+              <input type="text" onfocus="quitaError('base')" class="form-control" id="base"
+                aria-describedby="baseHelp">
+              <small id="baseHelp" class="form-text text-danger"></small>
             </div>
-        
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
+
+            <div class="form-group">
+              <label for="altura">Altura</label>
+              <input type="text" onfocus="quitaError('altura')" class="form-control" id="altura"
+                aria-describedby="alturaHelp">
+              <small id="alturaHelp" class="form-text text-danger"></small>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
+
+            <button type="submit" class="btn btn-primary">Calcular</button>
+          </form>
+
+          <h3 id="resultado" class="text-center my-5"></h3>
         </div>
-      </section>
+      </div>
 
-      <section id="json">
-        <h2 class="mi-h2 my-5">JSON</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
-                </button>
-              </h2>
-            </div>
-        
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
+      <!-- JS 2 -->
+      <div class="card mt-5">
+        <div class="card-header text-center" id="js2">
+          <h2 class="card-title mh-card">Ejercicio 2: Calculo Letra DNI</h2>
         </div>
-      </section>
-    </main>
+        <div class="col-md-6 mx-auto">
+          <form onsubmit="return calculoLetraDni()" class="mt-5 mx-auto border border-primary rounded p-4">
+            <div class="form-group">
+              <label for="numeroDni">Número de DNI:</label>
+              <input type="text" onfocus="quitaError('numeroDni')" class="form-control" id="numeroDni"
+                aria-describedby="numeroDniHelp">
+              <small id="numeroDniHelp" class="form-text text-danger"></small>
+            </div>
+            <input type="submit" value="Calcula" class="btn btn-primary">
+          </form>
 
-    
-    
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scriptsNav.js"></script>
-    <script src="js/FuncionesEjercicios.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-  </body>
+          <h3 id="resultado2" class="my-5 text-center"></h3>
+        </div>
+      </div>
+
+      <!-- JS 3 -->
+      <div class="card mt-5">
+        <div class="card-header text-center" id="js3">
+          <h2 class="card-title mh-card">Ejercicio 3: Cadena Mayúsculas/Minúsculas</h2>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <form onsubmit="return compruebaMayus()" class="mt-5 border border-primary rounded p-4">
+            <div class="form-group">
+              Introduce el texto
+              <input type="text" class="form-control" id="myn">
+            </div>
+            <input type="submit" class="btn btn-primary" value="comprobar">
+          </form>
+          <h2 id="resmyn" class="my-5 text-center"></h2>
+        </div>
+      </div>
+
+      <!-- JS 4 -->
+      <div class="card mt-5">
+        <div class="card-header text-center" id="js4">
+          <h2 class="card-title mh-card">Ejercicio 4: División por restas sucesivas</h2>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <form onsubmit="return diviRestas()" class="mt-5 border border-primary rounded p-4">
+            <div class="form-group">
+              <label for="div">Dividendo:</label>
+              <input type="text" class="form-control" id="divi1" aria-describedby="divi1Help">
+              <small id="divi1Help" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+              <label for="disor">Divisor:</label>
+              <input type="text" class="form-control" id="disor1" aria-describedby="disor1Help">
+              <small id="disor1Help" class="form-text text-danger"></small>
+            </div>
+            <input type="submit" value="Calcular" class="btn btn-primary">
+          </form>
+          <h2 id="resultado4" class="my-5 text-center"></h2>
+        </div>
+      </div>
+
+      <!-- JS 5 -->
+      <div class="card mt-5">
+        <div class="card-header text-center" id="js5">
+          <h2 class="card-title mh-card">Ejercicio 5: MCD de dos números por el algoritmo de Euclides</h2>
+        </div>
+        <div class="col-md-6 mx-auto">
+
+          <form onsubmit="return mcd()" class="mt-5 border border-primary rounded p-4">
+            <div class="form-group">
+              <label for="js5a">Número 1:</label>
+              <input type="text" onfocus="quitaError('js5a')" class="form-control" id="js5a" aria-describedby="js5aHelp"
+                required>
+              <small id="js5aHelp" class="form-text text-danger"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="js5b">Número 2:</label>
+              <input type="text" onfocus="quitaError('js5b')" class="form-control" id="js5b"
+                aria-describedby="js5bHelp">
+              <small id="js5bHelp" class="form-text text-danger"></small>
+            </div>
+
+            <input type="submit" value="Calcula" class="btn btn-primary">
+          </form>
+
+          <h2 id="resultado5" class="my-5 text-center"></h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="jquery">
+      <h2 class="mi-h2 my-5">JQuery</h2>
+      <div class="card mt-5">
+        <div class="card-header text-center" id="jquery1">
+          <h2 class="card-title mh-card">Ejercicio 1: hide/show, fadeIn/fadeOut y slideDown/slideUp</h2>
+        </div>
+        <div class="jumbotron col-md-6 mx-auto mt-5 text-center border border-secondary" id="hideshow">
+          <h1>Muestro y oculto un texto</h1>
+          <button id="oculta" class="btn btn-success m-3">Ocultar</button>
+          <button id="toggle" class="btn btn-warning m-3">Toggle</button>
+          <button id="muestra" class="btn btn-danger m-3">Mostrar</button>
+          <p id="p1">Un gran poder conlleva una gran responsabilidad</p>
+        </div>
+
+        <div class="jumbotron col-md-6 mx-auto mt-5 text-center border border-secondary" id="fadeInFadeOut">
+          <h1>Muestro y oculto un texto</h1>
+          <button id="ocultaF" class="btn btn-success m-3">Ocultar</button>
+          <button id="toggleF" class="btn btn-warning m-3">Toggle</button>
+          <button id="muestraF" class="btn btn-danger m-3">Mostrar</button>
+          <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, exercitationem perferendis rem
+            alias nulla rerum reiciendis suscipit eligendi voluptatibus fugit labore distinctio unde illum accusamus
+            saepe at cupiditate et quod?.</p>
+        </div>
+
+        <div class="jumbotron col-md-6 mx-auto mt-5 text-center border border-secondary" id="slideUpDown">
+          <h1>Muestro y oculto un texto</h1>
+          <button id="ocultaS" class="btn btn-success m-3">Ocultar</button>
+          <button id="toggleS" class="btn btn-warning m-3">Toggle</button>
+          <button id="muestraS" class="btn btn-danger m-3">Mostrar</button>
+          <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, exercitationem perferendis rem
+            alias nulla rerum reiciendis suscipit eligendi voluptatibus fugit labore distinctio unde illum accusamus
+            saepe at cupiditate et quod?.</p>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-header text-center" id="jquery2">
+          <h2 class="card-title mh-card">Ejercicio 2: animate/stop</h2>
+        </div>
+        <div id="animacion" class="my-3 p-5">
+          <div id="fig1"></div>
+          <div id="fig2"></div>
+          <div class="col-sm-4 mx-auto">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+          </div>
+          <p id="bienvenida" class="display-4">Bienvenidos a esta web</p>
+        </div>
+
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-header text-center" id="jquery3">
+          <h2 class="card-title mh-card">Ejercicio 3: callback/chaining</h2>
+        </div>
+        fgasdfasd
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-header text-center" id="jquery4">
+          <h2 class="card-title mh-card">Ejercicio 4: manejo de nodos del árbol DOM</h2>
+        </div>
+        fgasdfasd
+      </div>
+
+      <div class="card mt-5">
+        <div class="card-header text-center" id="jquery5">
+          <h2 class="card-title mh-card">Ejercicio 5: manejo de CSS</h2>
+        </div>
+        <div class="p-5">
+          <div class="cuadrado mx-auto"></div>
+          <div class="text-center mt-4">
+            <button id="azul" class="btn btn-primary">Azul</button>
+            <button id="verde" class="btn btn-success">Verde</button>
+            <button id="rojo" class="btn btn-danger">Rojo</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="json">
+      <h2 class="mi-h2 my-5">JSON</h2>
+      <div class="card mt-5">
+        <div class="card-header text-center" id="json">
+          <h2 class="card-title mh-card">Ejercicio de validación con Validate.js</h2>
+        </div>
+        fgasdfasd
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Jquery necesario para la barra de navegación -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scriptsNav.js"></script>
+
+  <!-- Mis scripts< -->
+  <script src="js/FuncionesEjercicios.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
