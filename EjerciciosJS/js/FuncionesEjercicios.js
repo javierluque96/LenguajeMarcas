@@ -213,32 +213,21 @@ $(document).ready(function () {
 
 // JQUERY 5
 $(document).ready(function () {
-  $("#start").click(function () {
-    // cuadro rojo, se desplaza
-    $("#fig1").animate({
-      left: '40%',
-      top: '50%',
-      height: '150px',
-      width: '150px',
-      opacity: 0.5
-    }, 3000);
-    // círculo amarillo, se desplaza
-    $("#fig2").animate({
-      right: '30%',
-      top: '40%',
-      height: '150px',
-      width: '150px',
-      opacity: 0.5
-    }, 3000);
-    // rótulo de bienvenida
-    $("#animacion p").fadeIn(2000);
+  $("#azul").click(function () {
+    // azul
+    $("#cuadrado").css({ "background-color": "blue" });
   });
 
-  // si se pulsa stop, toda la animación acaba
-  $("#stop").click(function () {
-    $("#fig1").stop(true, true);
-    $("#fig2").stop(true, true);
+  $("#verde").click(function () {
+    // verde
+    $("#cuadrado").css({ "background-color": "green" });
   });
+
+  $("#rojo").click(function () {
+    // rojo
+    $("#cuadrado").css({ "background-color": "red" });
+  });
+
 });
 
 
