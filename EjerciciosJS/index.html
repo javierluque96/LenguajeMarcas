@@ -269,7 +269,31 @@
         <div class="card-header text-center" id="jquery4">
           <h2 class="card-title mh-card">Ejercicio 4: manejo de nodos del árbol DOM</h2>
         </div>
-        <div class="my-5 text-center">Proximamente</div>
+        <div class="my-5 text-center">
+          <h5 class="mb-4">Ejemplo de Ancestors</h5>
+          <div class="col-md-6 mx-auto border border-secondary p-4">
+            Oculta la barra de navegación: <br>
+            $("nav .container-fluid").parent().hide();
+          </div>
+
+          <h5 class="my-4">Ejemplo de Descendants </h5>
+          <div class="col-md-6 mx-auto border border-secondary p-4">
+            Oculta los enlaces de la barra de navegación <br>
+            $(".navlinks").children("li.nav-item.dropdown").hide();
+          </div>
+
+          <h5 class="my-4">Ejemplo de Siblings </h5>
+          <div class="col-md-6 mx-auto border border-secondary p-4">
+            Oculta todos los enlaces dentro de Javascript menos el primero <br>
+            $(".navlinks li a").eq(1).siblings().hide();
+          </div>
+
+          <h5 class="my-4">Ejemplo de Filtering </h5>
+          <div class="col-md-6 mx-auto border border-secondary p-4">
+            Oculta el ultimo item de la barra de navegación, es decir, JSON <br>
+            $(".nav-item").last().hide();
+          </div>
+        </div>
       </div>
 
       <div class="card mt-5">
@@ -289,7 +313,7 @@
 
     <section id="json">
       <h2 class="mi-h2 my-5">JSON</h2>
-      <div class="card mt-5">
+      <div class="card my-5">
         <div class="card-header text-center" id="json">
           <h2 class="card-title mh-card">Ejercicio de validación con Validate.js</h2>
         </div>
