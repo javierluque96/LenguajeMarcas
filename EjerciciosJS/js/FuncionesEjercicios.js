@@ -211,6 +211,14 @@ $(document).ready(function () {
   });
 });
 
+// JQUERY 3
+$(document).ready(function(){
+  $("#jq3").click(function(){
+    $("#resultadoJQ3").css("color", "red").slideUp(2000).slideDown(2000);
+    alert("Pulsa ok para que el parrafo desaparezca y aparezca");
+  });
+});
+
 // JQUERY 5
 $(document).ready(function () {
   $("#azul").click(function () {
