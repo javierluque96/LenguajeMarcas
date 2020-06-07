@@ -1,0 +1,40 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border: solid black
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 610px;
+}
+
+.mole {
+  background-image: url('carlourao.jpeg');
+  background-size: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.mt-5 {
+  margin-top: 40px;
+}
+
+.p {
+  padding: 10px;
+}
+
+.jumbotron {
+  width: 60%;
+  background-color: rgb(240, 240, 240);
+}
