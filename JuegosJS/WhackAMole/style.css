@@ -35,7 +35,7 @@
 }
 
 .jumbotron {
-  width: 60%;
+  width: 75%;
   background-color: rgb(240, 240, 240);
 }
 
@@ -52,7 +52,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    width: 247.2px;
-    height: 244px;
+    width: 200.85px;
+    height: 198.25px;
   }
 }
