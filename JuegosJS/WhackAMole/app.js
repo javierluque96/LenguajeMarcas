@@ -18,7 +18,7 @@ function randomSquare() {
 }
 
 square.forEach(id => {
-  id.addEventListener('mouseup', () => {
+  id.addEventListener('click', () => {
     if (id.id === hitPosition) {
       result++
       score.textContent = result
