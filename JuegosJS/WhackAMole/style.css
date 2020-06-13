@@ -1,6 +1,6 @@
 .square {
-  width: 200px;
-  height: 200px;
+  width: 30%;
+  height: 30%;
   border: solid black
 }
 
@@ -37,4 +37,22 @@
 .jumbotron {
   width: 60%;
   background-color: rgb(240, 240, 240);
+}
+
+@media  (max-width: 600px) {
+  .grid {
+    width: 309px;
+    height: 305px;
+  }
+}
+
+@media  (max-width: 330px) {
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 247.2px;
+    height: 244px;
+  }
 }
