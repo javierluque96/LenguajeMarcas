@@ -1,0 +1,47 @@
+.tittle {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.grid {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  height: 328px;
+  width: 378px;
+  margin: auto;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  margin: 1px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.player-one {
+  background-color: red;
+  border-radius: 40px;
+}
+
+.player-two {
+  background-color: blue;
+  border-radius: 40px;
+}
+
+.taken {
+  border-color: white;
+}
+
+@media (max-width(600px)) {
+  .grid {
+    height: 150px;
+    width: 175px;
+  }
+  
+  .square {
+    height: 25px;
+    width: 25px;
+  }
+}
